@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     DISABLE_SSH=1 \
     DISABLE_CRON=1 \
     DISPLAY=:0 \
-    TZ=America/Argentina/Buenos_Aires
+    TZ=America/New_York
 
 CMD ["/sbin/my_init"]
 
@@ -83,7 +83,7 @@ ARG BUILD_VERSION
 ARG BUILD_PROJECT_URL
 ARG BUILD_COMMITER_NAME
 ARG BUILD_COMMITER_MAIL
-LABEL ar.com.scabb-island.ibgateway.maintainer="Manuel Andres Garcia Vazquez <mvazquez@scabb-island.com.ar>" \
+LABEL ar.com.scabb-island.ibgateway.maintainer="Yuriy Lyfenko <lyfenko@gmail.com>" \
       ar.com.scabb-island.ibgateway.license=GPL-3.0 \
       ar.com.scabb-island.ibgateway.build-date=${BUILD_DATE} \
       ar.com.scabb-island.ibgateway.vcs.url="${BUILD_PROJECT_URL}" \
